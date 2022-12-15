@@ -98,7 +98,7 @@ say.name: Positano
 What had been a sleepy fishing village is now a swanky destination. Positano is an almost impossible town, clutching the cliffs of Monti Lattari, a pastel-dabbled landscape that scrambles up the hillside from the Mediterranean Sea. It sits above the glittering gulf with views that sweep over the sea to the islands and coastal towns; it is itself a sight to see on its steep perch. Here, the "streets" take the form of passageways among the houses and steep sets of stairs that interlink the alleys. Only one road traverses the town - [Viale Pasitea](https://www.google.com/maps/place/Viale+Pasitea,+186,+84017+Positano+SA,+Italy/@40.628426,14.482857,17z/data=!4m13!1m7!3m6!1s0x133b9768bc2d0d01:0xe97a5f386f4c7cad!2sViale+Pasitea,+186,+84017+Positano+SA,+Italy!3b1!8m2!3d40.628426!4d14.4850457!3m4!1s0x133b9768bc2d0d01:0xe97a5f386f4c7cad!8m2!3d40.628426!4d14.4850457), where shops, cafes, hotels and villas huddle together to take advantage of the vehicular access and "wider" space. Other shops, eateries and coffee bars are tucked away in the lanes that you access by foot. 
 
 <!-- 
-say.trigger: (subset('activity' ,[0,5,6]) and subset('duration' ,[0,1,2,3]) and subset('spend',[0,1,2]) and subset('crowd',[0,1]) )
+say.trigger: (subset('activity' ,[0,1,5,6]) and subset('duration' ,[0,1,2,3]) and subset('spend',[0,1,2]) and subset('crowd',[0,1]) )
 say.type: answer
 say.name: Sorrento
 -->
