@@ -1,0 +1,126 @@
+<!-- query: plan a vacation to the Amalfi Coast-->
+## Where should I stay on the Amalfi Coast?
+![Arienzo Beach](/images/positano2.jpg)
+You can spend your time on the [Amalfi Coast](https://www.google.com/maps/place/Amalfi+Coast/@40.6334036,14.5654695,13z/data=!4m5!3m4!1s0x133b95adc34c71a1:0x4ce8cf14c94f4cdc!8m2!3d40.6333389!4d14.6028963) in many ways. From glamorous party scenes 
+and shopping to rugged mountain hiking to sailing and swimming along the coast. 
+There are many towns as well along the coastline which offer different levels of 
+price, crowds, and activities. By answering a few questions, we can direct you the 
+best town to stay in.
+
+
+<!-- [phrasing] 
+* plan a vacation to the Amalfi Coast
+* plan a vacation
+-->
+
+<!--
+say.name: activity
+say.type: multiple
+reply.name: activity
+[reply.values]
+* Boating
+* Swimming
+* Hiking
+* Gourmet meals
+* Shopping
+* Sightseeing
+* Partying
+-->
+### What activities do you want to do on your vacation?
+- ![ Path of the Gods](/images/pathGods.jpg)
+### [Hiking](https://g.page/path-of-the-gods?share)
+The Amalfi Coast has some of the most spectacular hiking in the world. 
+Exceptionally steep trails, views of the coastline, and the ability to walk from 
+the mountains to the beach to towns while sampling local foods make this one
+of the top hiking destinations in the world.
+- ![Boating and swimming](/images/beach.jpg)
+### Boating and swimming
+Given the steep terrain and lack of parking, boats are the best way to travel between 
+towns on the coast. Bring your own, [rent one](https://www.tripadvisor.com/Attractions-g187779-Activities-c61-t187-Amalfi_Coast_Province_of_Salerno_Campania.html), or hire a water taxi. The coastline includes dozens of beaches with everything from 
+[top restaurants](https://goo.gl/maps/UafadKGoHyZ4HiAp9) to party scenes to deserted coves.
+- ![La Corte Degli Dei](/images/bomerano.jpeg)
+### Shopping and Dining
+There are a wide variety of restaurants in the area, from inexpensive family restaurants to
+elegant dining experiences. In Positano and Amalfi, you will also find
+unique [Shops](https://emporiosirenuse.com/) for your souvenier bag.
+
+
+<!--
+say.name: duration
+say.ask: How long will you be staying on the Amalfi Coast?
+say.type: single
+reply.name: duration
+[reply.values]
+* One day
+* Two days
+* Three days
+* Greater than 4 days
+-->
+
+<!--
+say.name: crowd
+say.ask: Do you want a crowded, busy town or something quieter?
+say.type: single
+reply.name: crowd
+[reply.values]
+* Crowded and busy
+* Moderate number of people and busyness
+* Quiet, relaxed
+-->
+
+<!--
+say.name: spend
+say.ask: What is your budget per day for everything?
+say.type: single
+reply.name: spend
+[reply.values]
+* < 150 euro
+* 150-399 euro
+* > 400 euro
+-->
+
+<!-- 
+say.trigger: (subset('activity' ,[0,1,2,5]) and subset('duration' ,[1,2,3]) and subset('spend',[1,2]) and subset('crowd',[1,2]) )
+say.type: answer
+say.name: Praiano/images/sorrento.jpeg
+-->
+![Praiano](/images/praiano.jpeg)
+## [Praiano](https://www.summerinitaly.com/guide/praiano)
+In the middle of the Amalfi Coast, between Positano and Amalfi, is the lesser-known but beautiful village of Praiano. It is a seaside resort that has retained its atmosphere as a quiet fishing town throughout the centuries. It is an ideal base for a vacation on the Amalfi Coast, as the other towns can be easily reached from here by bus or boat. It's well connected to Sorrento, Positano, and Amalfi by the regional SITA bus, and by ferries, as well. The ambiance here is friendly and laid-back. Praiano has the feel of a village while offering the cafes, shops and restaurants of a resort as well as the beautiful beaches of [Marina di Praia](https://goo.gl/maps/fz1YHsfMKNnAzhmL7) and [Cala della Gavitella](https://goo.gl/maps/iQyGi4PQoiAyUMSJ7)
+
+<!-- 
+say.trigger: (subset('activity' ,[0,1,3,4,5,6]) and subset('duration' ,[1,2,3]) and subset('spend',[2]) and subset('crowd',[0]) )
+say.type: answer
+say.name: Positano
+-->
+![Positano](/images/positano1)
+## [Positano](https://www.positano.com/en/s/positano-2)
+What had been a sleepy fishing village is now a swanky destination. Positano is an almost impossible town, clutching the cliffs of Monti Lattari, a pastel-dabbled landscape that scrambles up the hillside from the Mediterranean Sea. It sits above the glittering gulf with views that sweep over the sea to the islands and coastal towns; it is itself a sight to see on its steep perch. Here, the "streets" take the form of passageways among the houses and steep sets of stairs that interlink the alleys. Only one road traverses the town - [Viale Pasitea](https://www.google.com/maps/place/Viale+Pasitea,+186,+84017+Positano+SA,+Italy/@40.628426,14.482857,17z/data=!4m13!1m7!3m6!1s0x133b9768bc2d0d01:0xe97a5f386f4c7cad!2sViale+Pasitea,+186,+84017+Positano+SA,+Italy!3b1!8m2!3d40.628426!4d14.4850457!3m4!1s0x133b9768bc2d0d01:0xe97a5f386f4c7cad!8m2!3d40.628426!4d14.4850457), where shops, cafes, hotels and villas huddle together to take advantage of the vehicular access and "wider" space. Other shops, eateries and coffee bars are tucked away in the lanes that you access by foot. 
+
+<!-- 
+say.trigger: (subset('activity' ,[0,5,6]) and subset('duration' ,[0,1,2,3]) and subset('spend',[0,1,2]) and subset('crowd',[0,1]) )
+say.type: answer
+say.name: Sorrento
+-->
+![Sorrento](/images/sorrento.jpeg)
+## [Sorrento](https://www.tripadvisor.com/Tourism-g187782-Sorrento_Province_of_Naples_Campania-Vacations.html)
+Sorrento is not located on the Amalfi Coast, but instead on the Sorrentine Peninsula in the region of Campania in southern Italy between the Bay of Naples and the famed coastline. This historic resort town is often chosen as a base to visit all the A-list sights in the surrounding area, from the Amalfi Coast towns of Positano, Amalfi and Ravello to the island of Capri (home of the Blue Grotto) and Ischia and the archaeological sites of [Pompeii](https://goo.gl/maps/ZJfn5LKq85cRaxLL7) and Herculaneum. Sorrento is a convenient jumping-off point for boat tours to Italy's Amalfi Coast or the Isle of Capri, as well as sightseeing day trips along the coastal roads. The local Circumvesuviana train line, ferries, and an airport shuttle bus all run between Naples (Napoli) and Sorrento. To travel between Sorrento and the Amalfi Coast, you can take the Sita bus or a ferry. Sorrento is also relatively well-connected to both Rome and Salerno by public transport for those arriving from farther afield.
+
+<!-- 
+say.trigger: (subset('activity' ,[2,3]) and subset('duration' ,[2,3]) and subset('spend',[0, 1, 2]) and subset('crowd',[2]) )
+say.type: answer
+say.name: Bomerano
+-->
+![Bomerano](/images/bomerano.jpeg)
+## [Bomerano](https://www.summerinitaly.com/guide/bomerano)
+Bomerano, a small village in the upper hills above [Conca dei Marini](https://www.summerinitaly.com/guide/conca-dei-marini) is a lovely alpine-like town above the [Amalfi Coast](https://www.summerinitaly.com/guide/amalfi-coast). It is also the starting point of the famous and fabulous [Path of the Gods](https://www.summerinitaly.com/guide/path-of-the-gods).
+
+
+<!-- 
+say.trigger: true
+say.type: answer
+say.name: Sorry
+-->
+![Furore Bridge](/images/SorryAsk1.jpg)
+### We don't have any town recommendations that fit your criteria. 
+For some ideas, see [the Amalfi Coast website](https://www.positano.com/en/l/amalfi-coast).

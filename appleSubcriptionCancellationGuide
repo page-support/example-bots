@@ -1,0 +1,89 @@
+<!-- query: cancel apple subscription-->
+## To cancel your Apple subscription
+Learn how to cancel a subscription from Apple or a subscription that you purchased with an app from the App Store.
+
+<!-- [phrasing] 
+* I want to cancel my apple subscription
+* cancel subscription
+-->
+
+<!--
+say.name: device
+say.ask: On what device do you want to cancel the subscription?
+say.type: single 
+reply.name: deviceType
+[reply.values]
+* iPhone, iPad, or iPod touch
+* Mac
+* Windows PC
+-->
+
+<!-- 
+say.trigger: same('device',[0]) 
+say.type: diagnostic
+-->
+1. Open the Settings app.
+2. Tap your name.
+3. Tap Subscriptions
+![iphone,ipod](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios14-iphone-12-pro-settings-apple-id-subscriptions-on-tap.png)
+4. Tap the subscription. [If you can't find the subscription that you want to cancel](https://support.apple.com/en-us/HT202039#troubleshoot)
+5. Tap Cancel Subscription. You might need to scroll down to find the Cancel Subscription button. If there is no Cancel button or you see an expiration message in red text, the subscription is already canceled.
+
+<!-- 
+say.trigger: same('device',[1]) 
+say.type: diagnostic
+-->
+1. Open the App Store app.
+2. Click your name. If you can't find your name, click Sign In.
+3. Click Account Settings.
+4. Scroll to Subscriptions, then click Manage.
+![mac](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/appleapps/appstore/macos-big-sur-app-store-view-information-manage-subscriptions.png)
+5. Next to the subscription, click Edit. [If you can't find the subscription that you want to cancel](https://support.apple.com/en-us/HT202039#troubleshoot)
+6. Click Cancel Subscription. If there is no Cancel or Cancel Subscription button, the subscription is already canceled.
+
+<!-- 
+say.trigger: same('device',[2]) 
+say.type: diagnostic
+-->
+1. On your PC, open iTunes. If you don't have iTunes, learn [how to download iTunes for Windows](https://support.apple.com/kb/HT210384).
+2. From the menu bar at the top of the iTunes window, choose Account, then choose View My Account.
+3. Click View Account.
+4. Scroll to the Settings section. Next to Subscriptions, click Manage.
+![windows](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/appleid/windows-10-itunes-for-windows-account-subscriptions-manage-callout.jpg)
+5. Click Edit. [If you can't find the subscription that you want to cancel](https://support.apple.com/en-us/HT202039#troubleshoot)
+6. Click Cancel Subscription. If there is no Cancel or Cancel Subscription button, the subscription is already canceled. 
+
+<!-- 
+say.trigger: share('device',[0,1,2])  
+say.name: isCancelled
+say.ask:Were you able to cancel the subscription after performing those steps?
+say.type: single
+reply.name: yes
+-->
+
+<!-- 
+say.trigger: same('isCancelled',[1])
+say.type: answer
+say.name: supportForums
+-->
+You can [cancel iCloud+ in your iCloud storage settings](https://support.apple.com/kb/HT207594).   
+If you aren't trying to cancel iCloud+, find your receipt:
+1. Search your email for the words "receipt from Apple."
+2. On the receipt for the subscription, check which Apple ID was used.
+![cantfind](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/appleid/macos-monterey-mail-apple-receipt-subscription-apple-id-callout.png)
+- If a family member's Apple ID appears on the receipt, ask that family member to use the steps in this article to cancel the subscription. You can’t cancel a family member's subscription.
+- If another Apple ID that you use appears on the receipt, sign in with that Apple ID and use the steps in this article to cancel the subscription.
+- If you can't find a receipt from Apple for the subscription, you might have bought the subscription from another company. To find out which company bills you, check your bank or credit card statement. To cancel the subscription, you must contact the company that bills you for the subscription.
+## Contact Apple Support
+[Contact Apple Support](https://getsupport.apple.com/?caller=kbase&PGF=PGF63006&category_id=SC0060&symptom_id=23208)
+## About subscriptions:
+- If you signed up for a free or discounted trial subscription and you don't want to renew it, cancel it at least 24 hours before the trial ends.
+
+*Canceling subscriptions is slightly different in some countries and regions. [Learn about special circumstances for Germany, Israel, South Africa, and Turkey](https://support.apple.com/kb/HT206627).
+
+<!-- 
+say.trigger: same('isCancelled',[0])
+say.type: answer
+say.name: done
+-->
+Great, thanks for contacting customer support. Goodbye.
